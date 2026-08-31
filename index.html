@@ -6,7 +6,7 @@
 <title>Melina Rajabi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Alex+Brush&display=swap" rel="stylesheet">
 <style>
   :root {
     --navy: #1B2140;
@@ -293,6 +293,14 @@
     margin: 0 auto 1.75rem;
     position: relative;
   }
+  .seal::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    opacity: 0.55;
+  }
   .seal::after {
     content: '';
     position: absolute;
@@ -304,10 +312,12 @@
     right: 14px;
   }
   .seal span {
-    font-family: 'Literata', serif;
-    font-style: italic;
-    font-size: 2.1rem;
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.6rem;
     color: var(--paper);
+    line-height: 1;
+    position: relative;
+    top: 2px;
   }
   .contact-email {
     font-size: 1rem;
@@ -397,16 +407,17 @@
   <section class="about">
     <div class="section-inner about-grid">
       <div class="reveal">
-        <p class="body-text">I'm an Electrical Engineering student at Sharif University of Technology, also pursuing a minor in Physics, driven by curiosity across a wide range of scientific fields.</p>
-        <p class="body-text">My main interest lies in bioelectrics — biomedical image and signal processing, computational neuroscience, and bioelectronics. I'm especially drawn to applying engineering methods to the analysis of biological phenomena.</p>
+        <p class="body-text">I'm an Electrical Engineering student at Sharif University of Technology, pursuing a minor in Physics alongside it, with curiosity that spans a wide range of scientific fields.</p>
+        <p class="body-text">My primary focus is bioelectrics, which I pursue through both computational methods—medical image analysis, biomedical signal processing, and computational neuroscience—and physical hardware, specifically biomedical devices and surgical robotics.</p>
       </div>
       <div class="facts reveal">
         <p class="facts-title">Research interests</p>
         <ul class="facts-list">
-          <li>Biomedical image processing</li>
+          <li>Medical image analysis</li>
           <li>Biomedical signal processing</li>
           <li>Computational neuroscience</li>
-          <li>Bioelectronics</li>
+          <li>Biomedical devices</li>
+          <li>Surgical robotics</li>
         </ul>
       </div>
     </div>
@@ -447,7 +458,7 @@
 
   <section class="contact">
     <div class="section-inner reveal">
-      <div class="seal"><span>M</span></div>
+      <div class="seal"><span>MR</span></div>
       <p class="contact-email">Email: <a href="mailto:melinarajabi82@gmail.com">melinarajabi82@gmail.com</a></p>
       <div class="social-row">
         <a class="social-icon" href="mailto:melinarajabi82@gmail.com" aria-label="Email">
